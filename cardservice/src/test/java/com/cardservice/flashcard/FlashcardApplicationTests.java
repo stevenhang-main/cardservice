@@ -1,4 +1,4 @@
-package com.cardservice.cardservice;
+package com.cardservice.flashcard;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class CardserviceApplicationTests {
+public class FlashcardApplicationTests {
 
 	@Test
 	public void contextLoads() {
