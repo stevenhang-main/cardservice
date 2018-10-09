@@ -1,5 +1,7 @@
 package com.cardservice.data;
 
-public class cardRepository extends JpaRepository<Card, Integer> {
+import com.cardservice.card.Card;
+
+public class cardRepo extends JpaRepository<Card, Integer> {
 
 }
