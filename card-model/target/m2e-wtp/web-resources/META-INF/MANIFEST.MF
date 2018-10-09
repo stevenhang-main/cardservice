@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: card-model
+Implementation-Version: 0.0.2-SNAPSHOT
+Built-By: David
+Implementation-Vendor-Id: com.cardservice
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/card-model
+Created-By: Maven Integration for Eclipse
+
