@@ -2,11 +2,12 @@ package com.cardservice.service;
 
 import java.util.List;
 
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Service;
+
 import com.cardservice.card.Card;
 
-public interface CardService {
-	public List<Card> getCards();
-	public Card drawACard();
-	public void createCard(Card card);
-	public void deleteCard(Card card);
+@Service
+public interface CardService extends CrudRepository<Card, Integer>{
+
 }

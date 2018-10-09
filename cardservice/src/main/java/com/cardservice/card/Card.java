@@ -10,12 +10,8 @@ import javax.persistence.Table;
 import org.springframework.data.annotation.Id;
 
 @Entity
-@Table( name="CARD")
 public class Card {
-	@Id
-	@Column (name="CARD_ID")
-	@SequenceGenerator(name="CARDID_SEQ", sequenceName="CARDID_SEQ")
-	@GeneratedValue(generator="CARDID_SEQ", strategy=GenerationType.AUTO)	
+	@Id @GeneratedValue
 	private int cardId;
 	private String question;
 	private String answer;
