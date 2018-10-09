@@ -9,7 +9,5 @@ import com.cardservice.card.Card;
 
 @Repository
 public interface CardRepository extends JpaRepository<Card, Integer> {
-	List<Card> findAllCard();
 	Card drawACard();
-	Card createACard();
 }
