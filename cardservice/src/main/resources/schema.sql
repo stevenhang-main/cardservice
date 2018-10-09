@@ -3,5 +3,3 @@ CREATE TABLE cards(
 	cardcontent varchar(255) NOT NULL,
 	answer integer NOT NULL
     );
-
-INSERT INTO 
