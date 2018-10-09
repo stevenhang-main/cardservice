@@ -1,4 +1,4 @@
-package com.flashcard;
+package com.cardservice.cardservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
