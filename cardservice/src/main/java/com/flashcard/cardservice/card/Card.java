@@ -1,34 +1,30 @@
-package com.cardservice.card;
+package com.flashcard.cardservice.card;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
 
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
 
-@Entity
+@Entity(name="cards")
 public class Card {
 	@Id @GeneratedValue
-	private int cardId;
+	private int id;
 	private String question;
 	private String answer;
 	public Card() {
 		super();
 	}
-	public Card(int cardId, String question, String answer) {
+	public Card(int id, String question, String answer) {
 		super();
-		this.cardId = cardId;
+		this.id = id;
 		this.question = question;
 		this.answer = answer;
 	}
 	public int getCardId() {
-		return cardId;
+		return id;
 	}
-	public void setCardId(int cardId) {
-		this.cardId = cardId;
+	public void setCardId(int id) {
+		this.id = id;
 	}
 	public String getQuestion() {
 		return question;
@@ -47,7 +43,7 @@ public class Card {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((answer == null) ? 0 : answer.hashCode());
-		result = prime * result + cardId;
+		result = prime * result + id;
 		result = prime * result + ((question == null) ? 0 : question.hashCode());
 		return result;
 	}
@@ -65,7 +61,7 @@ public class Card {
 				return false;
 		} else if (!answer.equals(other.answer))
 			return false;
-		if (cardId != other.cardId)
+		if (id != other.id)
 			return false;
 		if (question == null) {
 			if (other.question != null)
@@ -76,6 +72,6 @@ public class Card {
 	}
 	@Override
 	public String toString() {
-		return "Card [cardId=" + cardId + ", question=" + question + ", answer=" + answer + "]";
+		return "Card [id=" + id + ", question=" + question + ", answer=" + answer + "]";
 	} 
 }	

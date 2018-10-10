@@ -1,0 +1,1 @@
+INSERT INTO cards (id,question,answer) VALUES (1,'Test','test');

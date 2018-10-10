@@ -1,16 +1,15 @@
-package com.cardservice.controller;
+package com.flashcard.cardservice.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.Optional;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cardservice.card.Card;
-import com.cardservice.service.CardService;
+import com.flashcard.cardservice.card.Card;
+import com.flashcard.cardservice.service.CardService;
 
 @RestController
 public class CardController {
@@ -28,6 +27,15 @@ public class CardController {
 
 	private void addLinksToCard(Card c) {
 		
+	}
+	
+	private Optional<Card> drawACard()
+	{
+		//make random id
+		Random rand = new Random();
+		int ra = rand.nextInt((int)cs.count());
+		Optional<Card> result = cs.findById(ra);
+		return result;
 	}
 	
 	
