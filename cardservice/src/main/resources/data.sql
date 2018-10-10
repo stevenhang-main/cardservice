@@ -1,10 +1,10 @@
 INSERT INTO cards (id,question,answer) VALUES (1,'What is Java?','Wirte-once-Run-Anywhere Object-Oriented Programming Language. Java code is compiled to bytecode and interpreted by the JVM.');
-INSERT INTO cards (id,question,answer) VALUES (2,'What is Spring?','');
-INSERT INTO cards (id,question,answer) VALUES (3,'What are Microservices?','');
-INSERT INTO cards (id,question,answer) VALUES (4,'What is Docker?','');
+INSERT INTO cards (id,question,answer) VALUES (2,'What is Spring?','Open source Application framework built on TypeScript');
+INSERT INTO cards (id,question,answer) VALUES (3,'What are Microservices?','Application development style of dividing into group of services that each handle a singular business capability and are meant to operate independently.');
+INSERT INTO cards (id,question,answer) VALUES (4,'What is Docker?','containerization');
 INSERT INTO cards (id,question,answer) VALUES (5,'What is Kubernetes?','Kubernetes is a container-orchestration system for containerized applications.');
-INSERT INTO cards (id,question,answer) VALUES (6,'What is Hystrix?','');
-INSERT INTO cards (id,question,answer) VALUES (7,'What is Eureka?','');
-INSERT INTO cards (id,question,answer) VALUES (8,'What is Zuul?','');
-INSERT INTO cards (id,question,answer) VALUES (9,'What is Git?','');
-INSERT INTO cards (id,question,answer) VALUES (10,'What is Angular?','Front End Single Page applications Framewrok');
+INSERT INTO cards (id,question,answer) VALUES (6,'What is Hystrix?','Hystrix is a latency and fault tolerance library designed to isolate points of access to remote systems, services and 3rd party libraries, stop cascading failure and enable resilience in complex distributed systems where failure is inevitable.');
+INSERT INTO cards (id,question,answer) VALUES (7,'What is Eureka?','Eureka is used for locating services for the purpose of load balancing and failover of middle-tier servers.');
+INSERT INTO cards (id,question,answer) VALUES (8,'What is Zuul?','Zuul is the front door for all requests from devices and websites to the backend.');
+INSERT INTO cards (id,question,answer) VALUES (9,'What is Git?','Git is a distributed version control system.');
+INSERT INTO cards (id,question,answer) VALUES (10,'What is Angular?','Front End Single Page applications Framework');

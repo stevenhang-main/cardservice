@@ -2,7 +2,6 @@ package com.flashcard.cardservice.card;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-
 import javax.persistence.Id;
 
 @Entity(name="cards")

@@ -1,9 +1,7 @@
 package com.flashcard.cardservice.service;
 
 import java.util.List;
-import java.util.Set;
 
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
 import com.flashcard.cardservice.card.Card;
