@@ -1,9 +1,11 @@
 package com.flashcard.cardservice.controller;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,24 +19,30 @@ public class CardController {
 	private CardService cs;
 	
 	@RequestMapping(method=RequestMethod.GET)
-	public Iterable<Card> getCards() {
-		Iterable<Card> cards = cs.findAll();
+	public List<Card> getCards() {
+		List<Card> cards = cs.getCards();
 		for(Card c: cards) {
 			addLinksToCard(c);
 		}
 		return cards;
 	}
+	
+	@RequestMapping(value="{id}",method=RequestMethod.GET)
+	public Card getCard(@PathVariable("id") int id) {
+		Card ca = cs.getCardById(id);
+		addLinksToCard(ca);
+		return ca;
+	}
 
 	private void addLinksToCard(Card c) {
 		
 	}
-	
-	private Optional<Card> drawACard()
+	@RequestMapping(value="/draw",method=RequestMethod.GET)
+	private Card drawACard()
 	{
-		//make random id
 		Random rand = new Random();
-		int ra = rand.nextInt((int)cs.count());
-		Optional<Card> result = cs.findById(ra);
+		int ra = rand.nextInt(cs.getCards().size());
+		Card result = cs.getCardById(ra);
 		return result;
 	}
 	
