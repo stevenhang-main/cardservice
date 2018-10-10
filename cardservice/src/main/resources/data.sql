@@ -1,1 +1,10 @@
-insert into cards values (1, 'test','goldfish')
+INSERT INTO cards (id,question,answer) VALUES (1,'What is Java?','Wirte-once-Run-Anywhere Object-Oriented Programming Language. Java code is compiled to bytecode and interpreted by the JVM.');
+INSERT INTO cards (id,question,answer) VALUES (2,'What is Spring?','');
+INSERT INTO cards (id,question,answer) VALUES (3,'What are Microservices?','');
+INSERT INTO cards (id,question,answer) VALUES (4,'What is Docker?','');
+INSERT INTO cards (id,question,answer) VALUES (5,'What is Kubernetes?','Kubernetes is a container-orchestration system for containerized applications.');
+INSERT INTO cards (id,question,answer) VALUES (6,'What is Hystrix?','');
+INSERT INTO cards (id,question,answer) VALUES (7,'What is Eureka?','');
+INSERT INTO cards (id,question,answer) VALUES (8,'What is Zuul?','');
+INSERT INTO cards (id,question,answer) VALUES (9,'What is Git?','');
+INSERT INTO cards (id,question,answer) VALUES (10,'What is Angular?','Front End Single Page applications Framewrok');
